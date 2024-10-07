@@ -7,13 +7,15 @@ public class NumberRunner {
         Number Number = new Number();
        
         if(a <= 50 ) {
-            System.out.println("You Failed")
+            System.out.println("You Failed"); {
         
         
-        else if
+       
 
 
     
     }
 
+    
+    }
 }
