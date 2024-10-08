@@ -6,16 +6,19 @@ public class NumberRunner {
 
         Number Number = new Number();
        
-        if(a <= 50 ) {
-            System.out.println("You Failed"); {
+        Number.check(5, 7);
+        Number.check(15, 9);
+        Number.check(4, 5);
+        Number.check(3, 8);
+        
         
         
        
 
-
-    
     }
 
-    
-    }
 }
+    
+
+
+        
