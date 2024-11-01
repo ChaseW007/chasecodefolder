@@ -1,11 +1,9 @@
 import java.util.Scanner;
 public class App {
-    //declare varaiable 
-    static int speed;
-    static int time;
-        int traveled;
+        
         public static void main(String[] args) throws Exception {
-      
+            int speed, time;
+
             Scanner inputSpeed = new Scanner(System.in);
             System.out.println("Enter the car's speed (mph): ");
             speed = inputSpeed.nextInt();
@@ -16,16 +14,20 @@ public class App {
 
             inputSpeed.close();
             inputTime.close();
+
+            displayResults( calcDistanceTravel(speed, time) );
+
+
         }
 
 
-        int calcDistanceTravel (int speed, int time) {
-            traveled = speed * time;
-            return traveled;
+        public static int calcDistanceTravel (int s, int t) {
+            int calc = s * t;
+            return calc;
         }
 
 
-        void displayResults (int milesDistance) {
+        public static void displayResults (int milesDistance) {
             System.out.println("Distance Traveled (miles): " + milesDistance);
         }
 }
