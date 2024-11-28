@@ -38,9 +38,12 @@ class Ball {
         y = y + dy;
         x = x + dx;
         
-        if (y >= height - r) {
+        if (y >= height - r && y <= 0 + r) {
            dy = dy*-1;
-           dx = dx*-1;
+        }
+
+        if (x >= width - r && x <= 0 + r) {
+            dx = dx * -1;
         }
     }
 }
