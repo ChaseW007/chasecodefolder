@@ -1,25 +1,21 @@
 // Happens at launcgh
-int ballx, bally;
+Ball redball;
+
 void setup(){
     size(1280, 720);
     background(200,200,200);
-    ballx = width/2; 
-    bally = height/2;
+    redball = new Ball();
+  
 }
 
 // Happens constantly (screen refresh)
 void draw(){
     background(200,200,200);
+    redball.display();
+    redball.move();
 
 }
 
-void moveball() {
-    if(bally <= height - 200/2) {
-        ballx++;
-        bally++;
-    }
-
-}
 
 class Ball {
     int x, y, r;
